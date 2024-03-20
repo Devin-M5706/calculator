@@ -9,7 +9,7 @@ class Main {
     Scanner input = new Scanner(System.in);
 
     // ask users to enter operator
-    System.out.println("Choose an operator: +, -, *, or /");
+    System.out.println("Choose an operator: +, -, *, / , ! ");
     operator = input.next().charAt(0);
 
     // ask users to enter numbers
@@ -45,10 +45,16 @@ class Main {
         System.out.println(number1 + " / " + number2 + " = " + result);
         break;
 
+        case '!':
+        System.out.println(number1 + "!");
+        break;
+
       default:
         System.out.println("Invalid operator!");
         break;
     }
+
+
 
     input.close();
   }
